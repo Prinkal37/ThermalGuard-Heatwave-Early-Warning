@@ -10,24 +10,24 @@ from typing import List, Dict, Any, Optional
 import datetime
 import math
 
-from .algorithms import calculate_wbgt_outdoor
-from .datasets import (
+from algorithms import calculate_wbgt_outdoor
+from datasets import (
     INDIAN_CITIES_WARDS,
     NCDC_SURVEILLANCE_BASELINE,
     NCMRWF_NWP_METADATA,
     fetch_open_meteo_live,
     get_calibrated_scenario_data
 )
-from .models import AIRiskEngine
-from .alerts import (
+from models import AIRiskEngine
+from alerts import (
     get_role_specific_advisories,
     build_twilio_sms_payload,
     build_whatsapp_business_payload,
     build_fast2sms_payload,
     generate_sachet_cap_xml
 )
-from .analyst_store import analyst_store
-from .settings_store import settings_store
+from analyst_store import analyst_store
+from settings_store import settings_store
 
 app = FastAPI(
     title="ThermalGuard API",

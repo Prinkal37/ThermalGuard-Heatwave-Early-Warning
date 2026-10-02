@@ -11,7 +11,7 @@ Implements:
 
 import math
 from typing import Dict, Any, List
-from .algorithms import (
+from algorithms import (
     calculate_wbgt_outdoor,
     calculate_utci,
     calculate_heat_index,
